@@ -62,11 +62,4 @@ npm run dev          # starts on http://localhost:5173
 - Upload a few designs, then go back to the gallery and click
   "Enquire on WhatsApp" to test the flow
 
-## Notes
 
-- Uploaded images are stored locally in `backend/uploads/` and served as
-  static files. For production, you'd want to swap this for a cloud storage
-  service (e.g. Cloudinary or S3), but local storage keeps this simple for a
-  first version / resume project.
-- MongoDB can be a local install or a free MongoDB Atlas cluster — just put
-  the connection string in `MONGO_URI`.
