@@ -1,37 +1,47 @@
-# Radium Art Designs - Catalog & Inquiry System
+# Chachu's Art — Radium Sticker Catalog
 
-A MERN stack web app built for a family business (radium art / sticker designs
-for bikes, cars, helmets, glass, walls). Customers browse the design catalog
-and enquire directly on WhatsApp with the design's unique code pre-filled in
-the message. The shop owner gets an admin panel to upload new designs and see
-a backup list of all inquiries.
+A website built for my uncle's (chachu's) shop, which makes radium (glow-in-the-dark) 
+sticker designs for bikes, cars, helmets, glass, and walls.
 
-## Tech Stack
+Customers can browse his designs online, and if they like one, they tap a button 
+to enquire directly on WhatsApp — no need to visit the shop just to ask about a design.
 
-- **MongoDB** + Mongoose - database
-- **Express** - REST API
-- **React** (Vite) - frontend
-- **Node.js** - runtime
-- JWT for admin authentication, Multer for image uploads
+🔗 **GitHub:** https://github.com/itanupriya/Chachu-s-Art
 
-## Features
+## What it does
 
-- Public gallery, filterable by category (Bike / Car / Glass / Wall / Helmet / Other)
-- Each design gets an auto-generated unique code, e.g. `BIKE-043`
-- "Enquire on WhatsApp" button opens WhatsApp with a pre-filled message
-  containing the design code, and also logs the inquiry in the database
-- Admin login, upload new designs, delete old ones
-- Admin inquiries tab to see every inquiry received
+- Customers browse designs, sorted by category (Bike, Car, Glass, Wall, Helmet, Other)
+- Every design gets its own unique code automatically, like `BIKE-001`
+- Tapping "Enquire on WhatsApp" opens WhatsApp with a message already filled in, 
+  mentioning the exact design code — so chachu knows exactly which design the 
+  customer means
+- Every enquiry is also saved in the database, as a backup in case the customer 
+  doesn't send the WhatsApp message
+- Chachu has his own admin login where he can upload new designs and see every 
+  enquiry that's come in
 
-## Project Structure
+## Built with
 
-```
-radium-art/
-  backend/     # Express + MongoDB API
-  frontend/    # React (Vite) app
-```
+- **MongoDB** — stores the designs and enquiries
+- **Express** — the backend API
+- **React** (with Vite) — the website itself
+- **Node.js** — runs the backend
+- **JWT** — keeps the admin login secure
+- **Multer** — handles uploading design images
 
-## Setup
+## ScreenShots in working mode of the Art gallery 
+
+### Gallery
+![Gallery page](frontend/public/DemoIMG/gallery.png)
+
+### Admin Login
+![Login page](frontend/public/DemoIMG/login.png)
+
+### Inquiries
+![Inquiries](frontend/public/DemoIMG/inquiry.png)
+
+### Design Upload
+![Upload designs](frontend/public/DemoIMG/uploads.png)
 
 ### 1. Backend
 
@@ -39,10 +49,14 @@ radium-art/
 cd backend
 npm install
 cp .env.example .env
-# edit .env: set MONGO_URI, JWT_SECRET, ADMIN_USERNAME, ADMIN_PASSWORD
-npm run seed:admin   # creates the first admin login (run once)
-npm run dev          # starts on http://localhost:5000
 ```
+Open `.env` and fill in your own MongoDB connection string, a secret key, and 
+an admin username/password. Then run:
+```bash
+npm run seed:admin
+npm run dev
+```
+This starts the backend at `http://localhost:5000`
 
 ### 2. Frontend
 
@@ -50,16 +64,14 @@ npm run dev          # starts on http://localhost:5000
 cd frontend
 npm install
 cp .env.example .env
-# edit .env: set VITE_WHATSAPP_NUMBER to the shop's WhatsApp number
-npm run dev          # starts on http://localhost:5173
 ```
+Open `.env` and set your WhatsApp number. Then run:
+```bash
+npm run dev
+```
+This starts the website at `http://localhost:5173`
 
-### 3. Try it out
+### 3. Try it
 
-- Visit `http://localhost:5173` to see the public gallery
-- Visit `http://localhost:5173/admin/login` and log in with the admin
-  credentials you set in the backend `.env`
-- Upload a few designs, then go back to the gallery and click
-  "Enquire on WhatsApp" to test the flow
-
-
+- Open `http://localhost:5173` to see the shop's gallery
+- Go to `http://localhost:5173/admin/login` to log in as admin and upload designs
