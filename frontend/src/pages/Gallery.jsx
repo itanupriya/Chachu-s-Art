@@ -29,8 +29,7 @@ function Gallery() {
       <span className="eyebrow"><h3>Welcome to Chachu's Shop</h3></span>
       <h1>Radium Art Designs </h1>
       <p className="subtitle">
-        Browse the collection below and tap "Enquire on WhatsApp" for pricing
-        and sizing.
+        Have a look through the collection below. Found something you like? Tap 'Enquire on WhatsApp' and we'll sort out the pricing and sizing for you.
       </p>
 
       <CategoryTabs active={category} onChange={setCategory} />

@@ -31,6 +31,7 @@ function AdminLogin() {
           value={username}
           onChange={(e) => setUsername(e.target.value)}
           required
+          placeholder = "Enter Username"
         />
 
         <label>Password</label>
@@ -39,6 +40,7 @@ function AdminLogin() {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
+          placeholder = "password" italic
         />
 
         {error && <p className="error">{error}</p>}

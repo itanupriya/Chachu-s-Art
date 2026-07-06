@@ -12,8 +12,16 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <Link to="/" className="brand">
-         <h2>🐦‍🔥Chachu's Art</h2>
+      <Link to="/" className="brand"
+        style={{
+          fontFamily: "'Space Grotesk', sans-serif",
+          fontWeight: 700,
+          fontSize: "24px",
+          background:"linear-gradient(90deg, #ff512f, #f09819, #ff512f)",
+          WebkitBackgroundClip: "text",
+          backgroundClip: "text",
+          color: "transparent",
+        }}>🔥 Chachu's Art
       </Link>
 
       <div className="nav-links">

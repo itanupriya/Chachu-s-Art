@@ -5,9 +5,9 @@ export const categoryColors = {
   Glass: "#c6ff00", // lime
   Wall: "#ff8a00", // orange
   Helmet: "#b14bff", // violet
-  Other: "#4dd0e1", // soft teal
+  Other: "#c45f76", // soft teal
 };
 
 export function getCategoryColor(category) {
-  return categoryColors[category] || "#00e5ff";
+  return categoryColors[category] || "#d5ce7f";
 }
