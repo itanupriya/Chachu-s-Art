@@ -34,16 +34,16 @@ to enquire directly on WhatsApp — no need to visit the shop just to ask about 
 ## Screenshots
 
 ### Gallery
-![Gallery page](frontend/public/DemoIMG/gallery.png)
+![Gallery page](frontend/Public/DemoIMG/gallery.png)
 
 ### Admin Login
-![Login page](frontend/public/DemoIMG/login.png)
+![Login page](frontend/Public/DemoIMG/login.png)
 
 ### Inquiries Dashboard
-![Inquiries](frontend/public/DemoIMG/inquiry.png)
+![Inquiries](frontend/Public/DemoIMG/inquiry.png)
 
 ### Upload Designs
-![Upload designs](frontend/public/DemoIMG/uploads.png)
+![Upload designs](frontend/Public/DemoIMG/uploads.png)
 
 ### 1. Backend
 
