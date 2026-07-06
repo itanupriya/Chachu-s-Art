@@ -31,16 +31,18 @@ to enquire directly on WhatsApp — no need to visit the shop just to ask about 
 
 ## ScreenShots in working mode of the Art gallery 
 
+## Screenshots
+
 ### Gallery
 ![Gallery page](frontend/public/DemoIMG/gallery.png)
 
 ### Admin Login
 ![Login page](frontend/public/DemoIMG/login.png)
 
-### Inquiries
+### Inquiries Dashboard
 ![Inquiries](frontend/public/DemoIMG/inquiry.png)
 
-### Design Upload
+### Upload Designs
 ![Upload designs](frontend/public/DemoIMG/uploads.png)
 
 ### 1. Backend
