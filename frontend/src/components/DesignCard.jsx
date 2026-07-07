@@ -26,7 +26,7 @@ function DesignCard({ design }) {
 
   return (
     <div className="design-card" style={{ "--glow": getCategoryColor(design.category) }}>
-      <img src={`${API_URL}${design.imageUrl}`} alt={design.title} />
+      <img src={design.imageUrl} alt={design.title} />
       <div className="design-card-info">
         <span className="design-code">#{design.code}</span>
         <h3>{design.title}</h3>

@@ -137,7 +137,7 @@ function AdminDashboard() {
           <div className="design-grid">
             {designs.map((design) => (
               <div className="design-card" key={design._id} style={{ "--glow": getCategoryColor(design.category) }}>
-                <img src={`${API_URL}${design.imageUrl}`} alt={design.title} />
+                <img src={design.imageUrl} alt={design.title} />
                 <div className="design-card-info">
                   <span className="design-code">#{design.code}</span>
                   <h3>{design.title}</h3>

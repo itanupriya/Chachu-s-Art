@@ -35,7 +35,7 @@ router.post("/", protect, upload.single("image"), async (req, res) => {
     }
 
     const code = await generateCode(category);
-    const imageUrl = `/uploads/${req.file.filename}`;
+    const imageUrl = req.file.path;
 
     const design = await Design.create({ title, category, code, imageUrl });
     res.status(201).json(design);
